@@ -1,0 +1,5 @@
+{
+  "model_name": "Boston House Price Model",
+  "version": "1.0",
+  "columns": ["CRIM","ZN","INDUS","CHAS","NOX","RM","AGE","DIS","RAD","TAX","PTRATIO","B","LSTAT"]
+}

@@ -1,0 +1,62 @@
+{
+  "cv_results_summary": {
+    "Linear": {
+      "model": "LinearRegression()",
+      "cv_rmse": 4.86334786622651
+    },
+    "Ridge": {
+      "model": "Ridge()",
+      "cv_rmse": 4.858375734518649
+    },
+    "Lasso": {
+      "model": "Lasso()",
+      "cv_rmse": 5.477701828819422
+    },
+    "RandomForest": {
+      "model": "RandomForestRegressor(random_state=42)",
+      "cv_rmse": 4.086827235485799
+    },
+    "GradientBoosting": {
+      "model": "GradientBoostingRegressor(random_state=42)",
+      "cv_rmse": 3.8139471517077217
+    }
+  },
+  "tuned_searches": {
+    "RandomForest": {
+      "model__n_estimators": 100,
+      "model__min_samples_split": 2,
+      "model__min_samples_leaf": 1,
+      "model__max_features": 0.5,
+      "model__max_depth": null
+    },
+    "GradientBoosting": {
+      "model__subsample": 0.6,
+      "model__n_estimators": 400,
+      "model__max_depth": 3,
+      "model__learning_rate": 0.05
+    }
+  },
+  "final_scores": {
+    "Linear": {
+      "rmse": 5.057822882680733,
+      "r2": 0.6511625173265344
+    },
+    "Ridge": {
+      "rmse": 5.061839787610546,
+      "r2": 0.6506082063239306
+    },
+    "Lasso": {
+      "rmse": 5.282161914336278,
+      "r2": 0.6195309543997373
+    },
+    "RandomForest": {
+      "rmse": 2.9024860827890815,
+      "r2": 0.8851221756503854
+    },
+    "GradientBoosting": {
+      "rmse": 2.5986121385165384,
+      "r2": 0.907917132385186
+    }
+  },
+  "best_model": "GradientBoosting"
+}

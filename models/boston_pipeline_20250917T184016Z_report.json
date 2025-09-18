@@ -1,0 +1,89 @@
+{
+  "cv_results_summary": {
+    "Linear": {
+      "model": "LinearRegression()",
+      "cv_rmse": 4.446218971540422
+    },
+    "Ridge": {
+      "model": "Ridge()",
+      "cv_rmse": 3.938454229370744
+    },
+    "Lasso": {
+      "model": "Lasso()",
+      "cv_rmse": 4.769429501266306
+    },
+    "DecisionTree": {
+      "model": "DecisionTreeRegressor(random_state=42)",
+      "cv_rmse": 5.243504674267807
+    },
+    "ExtraTrees": {
+      "model": "ExtraTreesRegressor(random_state=42)",
+      "cv_rmse": 3.767910117175378
+    },
+    "RandomForest": {
+      "model": "RandomForestRegressor(random_state=42)",
+      "cv_rmse": 4.104376196877151
+    },
+    "GradientBoosting": {
+      "model": "GradientBoostingRegressor(random_state=42)",
+      "cv_rmse": 3.8632675650389237
+    },
+    "XGBoost": {
+      "model": "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=None, device=None, early_stopping_rounds=None,\n             enable_categorical=False, eval_metric='rmse', feature_types=None,\n             feature_weights=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=None, max_bin=None, max_cat_threshold=None,\n             max_cat_to_onehot=None, max_delta_step=None, max_depth=None,\n             max_leaves=None, min_child_weight=None, missing=nan,\n             monotone_constraints=None, multi_strategy=None, n_estimators=None,\n             n_jobs=None, num_parallel_tree=None, ...)",
+      "cv_rmse": 4.136271460257452
+    }
+  },
+  "tuned_params": {
+    "RandomForest": {
+      "model__n_estimators": 100,
+      "model__min_samples_split": 2,
+      "model__min_samples_leaf": 1,
+      "model__max_depth": null
+    },
+    "GradientBoosting": {
+      "model__subsample": 0.6,
+      "model__n_estimators": 400,
+      "model__max_depth": 3,
+      "model__learning_rate": 0.05
+    },
+    "ExtraTrees": {
+      "model__n_estimators": 400,
+      "model__max_depth": 10
+    }
+  },
+  "final_scores": {
+    "Linear": {
+      "rmse": 3.808969530950931,
+      "r2": 0.8021614559827837
+    },
+    "Ridge": {
+      "rmse": 3.7394585289895375,
+      "r2": 0.8093163956990787
+    },
+    "Lasso": {
+      "rmse": 4.481071684097731,
+      "r2": 0.7261834508916116
+    },
+    "DecisionTree": {
+      "rmse": 5.513930664466957,
+      "r2": 0.5854102971057585
+    },
+    "ExtraTrees": {
+      "rmse": 3.024254847483409,
+      "r2": 0.8752809825379992
+    },
+    "RandomForest": {
+      "rmse": 3.178396845864896,
+      "r2": 0.8622434835017527
+    },
+    "GradientBoosting": {
+      "rmse": 2.8822031307266864,
+      "r2": 0.886722128209182
+    },
+    "XGBoost": {
+      "rmse": 3.1965973773467775,
+      "r2": 0.860661289347079
+    }
+  },
+  "best_model": "GradientBoosting"
+}
